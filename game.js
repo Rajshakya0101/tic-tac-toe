@@ -6,14 +6,15 @@ let msgContainer = document.querySelector(".msg-container");
 let container = document.querySelector(".container");
 let victory_animation = document.querySelector(".victory-animation");
 let turn_msg = document.querySelector(".turn-msg");
+const media = document.querySelector("media");
 
 let turnX = true;
 let timeouts = [];
 
-let clickSound = new Audio('/media/box_click.mp3');
-let victorySound_trumpet = new Audio('/media/victory_trumpets.mp3');
-let victorySound_henchman = new Audio('/media/victory_henchman.wav');
-let match_draw = new Audio('/media/match_draw.mp3');
+let clickSound = new Audio('media/box_click.mp3');
+let victorySound_trumpet = new Audio('media/victory_trumpets.mp3');
+let victorySound_henchman = new Audio('media/victory_henchman.wav');
+let match_draw = new Audio('media/match_draw.mp3');
 
 const winning_case = [
     [0, 1, 2],
