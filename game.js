@@ -10,10 +10,10 @@ let turn_msg = document.querySelector(".turn-msg");
 let turnX = true;
 let timeouts = [];
 
-let clickSound = new Audio('/box_click.mp3');
-let victorySound_trumpet = new Audio('/victory_trumpets.mp3');
-let victorySound_henchman = new Audio('/victory_henchman.wav');
-let match_draw = new Audio('/match_draw.mp3');
+let clickSound = new Audio('media/box_click.mp3');
+let victorySound_trumpet = new Audio('media/victory_trumpets.mp3');
+let victorySound_henchman = new Audio('media/victory_henchman.wav');
+let match_draw = new Audio('media/match_draw.mp3');
 
 const winning_case = [
     [0, 1, 2],
