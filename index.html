@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/icon.png">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="animation-container" id="animationContainer">
+            <div class="victory-animation hide" id="lottieContainer" style="width: 720px; height: 512px;"></div>
+        </div>
+        <div class="msg-container hide">
+            <p class="msg"></p>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <div class="turn-msg-container">
+            <p class="turn-msg"></p>
+        </div>
+        <button id="rst-btn">Reset Game</button>
+        <button id="new-game" class="hide">New Game</button>
+    </main>
+    <footer>
+        <p> <p class="footer-txt">Developed with ❤️ By Developer Raj</p>
+            <div class="links-container">
+                <a href="https://www.github.com/rajshakya0101" target="_blank"><img src="/media/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/raj-shakya-8b205225b" target="_blank"><img src="/media//linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/dashing_raj__143" target="_blank"><img src="/media/insta.png" alt="Instagram"></a>
+            </div>
+        </p>
+    </footer>
+    <script>
+        // Load the JSON file and render the animation
+        fetch('/media/animation.json')
+            .then(response => response.json())
+            .then(data => {
+                lottie.loadAnimation({
+                    container: document.getElementById('lottieContainer'), // the dom element that will contain the animation
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    animationData: data // the path to the animation json
+                });
+            })
+            .catch(error => console.error('Error loading animation:', error));
+    </script>
+    <script src="game.js"></script>
+</body>
+</html>
