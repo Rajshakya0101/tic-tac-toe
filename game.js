@@ -54,6 +54,11 @@ const resetGame = () => {
     // msgContainer.classList.add("hide");
     enable_boxes();
     clearAllTimeouts();
+    boxes.forEach((box) => {
+            box.innerText = "";
+            box.disabled = false;
+            box.classList.remove('fade');
+    });
 };
 
 const sound = () => {
