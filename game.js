@@ -75,8 +75,8 @@ const newGame = () => {
     // new_game_btn.classList.add("hide");
     // reset_btn.classList.remove("hide");
     // msgContainer.classList.add("hide");
-    container.classList.remove("hide");
-    hideElement(victory_animation);
+    // container.classList.remove("hide");
+    // hideElement(victory_animation);
     enable_boxes();
     clearAllTimeouts();
     boxes.forEach((box) => {
@@ -163,10 +163,10 @@ const checkWinner = () => {
                 victorySound_trumpet.play();
                 showElement(msgContainer);
                 showElement(new_game_btn);
-                hideElement(container);
+                // hideElement(container);
                 hideElement(reset_btn);
                 // msgContainer.classList.remove("hide");
-                container.classList.add("hide");
+                // container.classList.add("hide");
                 // reset_btn.classList.add("hide");
                 // new_game_btn.classList.remove("hide");
                 fireworks();
@@ -198,7 +198,7 @@ const interval = setInterval(function() {
     return clearInterval(interval);
   }
 
-  const particleCount = 200 * (timeLeft / duration);
+  const particleCount = 50 * (timeLeft / duration);
 
   // since particles fall down, start a bit higher than random
   confetti(
