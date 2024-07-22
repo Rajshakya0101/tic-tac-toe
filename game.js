@@ -163,6 +163,7 @@ const checkWinner = () => {
                 victorySound_trumpet.play();
                 showElement(msgContainer);
                 showElement(new_game_btn);
+                showElement(container);
                 // hideElement(container);
                 hideElement(reset_btn);
                 // msgContainer.classList.remove("hide");
