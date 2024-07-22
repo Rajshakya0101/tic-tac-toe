@@ -75,7 +75,7 @@ const newGame = () => {
     // new_game_btn.classList.add("hide");
     // reset_btn.classList.remove("hide");
     // msgContainer.classList.add("hide");
-    // container.classList.remove("hide");
+    container.classList.remove("hide");
     hideElement(victory_animation);
     enable_boxes();
     clearAllTimeouts();
