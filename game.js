@@ -166,7 +166,7 @@ const checkWinner = () => {
                 hideElement(container);
                 hideElement(reset_btn);
                 // msgContainer.classList.remove("hide");
-                // container.classList.add("hide");
+                container.classList.add("hide");
                 // reset_btn.classList.add("hide");
                 // new_game_btn.classList.remove("hide");
                 fireworks();
